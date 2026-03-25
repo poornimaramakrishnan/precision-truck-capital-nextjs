@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Precision Truck Capital — Marketing Website
 
-## Getting Started
 
-First, run the development server:
+A clean, fast, fully static 5-page marketing website built with **Next.js 14** (App Router) and **Tailwind CSS** for a commercial truck financing company.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+[View Live Site →](#) *(Deployed on Vercel)*
+
+## 📄 Pages
+
+| Page | Route | Description |
+|------|-------|-------------|
+| **Home** | `/` | Hero, trust bar, value props, equipment grid, dealer teaser, testimonials |
+| **Services** | `/services` | Financing programs, key benefits, how it works, FAQ accordion |
+| **Dealer Program** | `/dealer-program` | Dealer benefits, 4-step process, features, dealer testimonials |
+| **About** | `/about` | Company story, stats, differentiators, values, leadership team |
+| **Contact** | `/contact` | Contact form, quick contact info, map note |
+
+## 🛠 Tech Stack
+
+- **Next.js 14** (App Router, static export)
+- **TypeScript**
+- **Tailwind CSS** (custom navy + orange color palette)
+- **Lucide React** (icon library)
+- **Static HTML export** — no server, no database, no CMS
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with Header + Footer
+│   ├── page.tsx            # Home page
+│   ├── services/page.tsx   # Services page
+│   ├── dealer-program/page.tsx  # Dealer Program page
+│   ├── about/page.tsx      # About page
+│   └── contact/page.tsx    # Contact page
+├── components/
+│   ├── Header.tsx          # Sticky navigation
+│   ├── Footer.tsx          # Footer with links
+│   ├── Hero.tsx            # Reusable hero section
+│   ├── IconCard.tsx        # Icon + text card component
+│   ├── TrustBar.tsx        # Stats trust bar
+│   ├── SectionHeading.tsx  # Section heading component
+│   ├── StepsTimeline.tsx   # Numbered steps timeline
+│   ├── Testimonials.tsx    # Testimonial cards
+│   ├── FAQAccordion.tsx    # Collapsible FAQ
+│   ├── ContactForm.tsx     # Contact/application form
+│   └── CTASection.tsx      # Call-to-action banner
+└── data/
+    ├── site.ts             # Site-wide config (name, phone, nav)
+    ├── home.ts             # Home page content
+    ├── services.ts         # Services page content
+    ├── dealer.ts           # Dealer program content
+    ├── about.ts            # About page content
+    ├── contact.ts          # Contact page content
+    └── images.ts           # Hero image URLs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚧 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## 📦 Build & Deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build    # Generates static HTML in /out
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy the `/out` directory to Vercel, Netlify, or any static host.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design
 
-## Deploy on Vercel
+- **Colors**: Deep navy (#102a43) + Safety orange (#f59e0b) + White backgrounds
+- **Typography**: Inter (Google Fonts)
+- **Style**: Clean, modern, industrial — mobile-first responsive
+- **Components**: All reusable, data-driven from /data files
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Content Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All page content lives in simple TypeScript files under `/src/data/`. To update content, edit the relevant data file — no CMS or database needed.
+
+---
+
+Built for the American trucking industry.

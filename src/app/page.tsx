@@ -1,101 +1,110 @@
-import Image from "next/image";
+import { Metadata } from "next";
+import Link from "next/link";
+import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
+import SectionHeading from "@/components/SectionHeading";
+import IconCard from "@/components/IconCard";
+import Testimonials from "@/components/Testimonials";
+import CTASection from "@/components/CTASection";
+import { homeData } from "@/data/home";
+import { heroImages } from "@/data/images";
+import { ArrowRight } from "lucide-react";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Precision Truck Capital | Commercial Truck Financing - Direct Lender",
+  description:
+    "Direct lender for commercial truck financing. Approvals in hours, 0% down options, bad credit welcome. New and used trucks, trailers, engine overhauls - nationwide.",
+};
+
+export default function HomePage() {
+  const { hero, trustBar, whyChooseUs, whatWeFinance, dealerTeaser, testimonials, finalCta } =
+    homeData;
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Hero
+        headline={hero.headline}
+        subheadline={hero.subheadline}
+        primaryCta={hero.primaryCta}
+        secondaryCta={hero.secondaryCta}
+        size="large"
+        bgImage={heroImages.home}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <TrustBar items={trustBar} />
+
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <SectionHeading heading={whyChooseUs.heading} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyChooseUs.items.map((item) => (
+              <IconCard
+                key={item.title}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+                variant="centered"
+              />
+            ))}
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </section>
+
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <SectionHeading
+            heading={whatWeFinance.heading}
+            subheading={whatWeFinance.subheading}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whatWeFinance.items.map((item) => (
+              <IconCard
+                key={item.title}
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="bg-gradient-to-br from-navy-900 to-navy-950 rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full -translate-y-1/3 translate-x-1/3" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-orange-500/10 rounded-full translate-y-1/3 -translate-x-1/3" />
+            <div className="relative z-10">
+              <span className="inline-block px-4 py-1.5 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium mb-6">
+                For Dealers &amp; Service Centers
+              </span>
+              <h2 className="heading-2 text-white max-w-2xl mx-auto">
+                {dealerTeaser.heading}
+              </h2>
+              <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+                {dealerTeaser.description}
+              </p>
+              <Link
+                href={dealerTeaser.cta.href}
+                className="btn-primary mt-8 inline-flex items-center gap-2"
+              >
+                {dealerTeaser.cta.label}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Testimonials heading={testimonials.heading} items={testimonials.items} />
+
+      <CTASection
+        heading={finalCta.heading}
+        subheading={finalCta.subheading}
+        primaryCta={finalCta.primaryCta}
+        secondaryCta={finalCta.secondaryCta}
+        variant="orange"
+      />
+    </>
   );
 }

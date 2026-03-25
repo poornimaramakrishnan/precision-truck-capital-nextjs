@@ -1,0 +1,31 @@
+export const siteConfig = {
+  name: "Precision Truck Capital",
+  tagline: "Direct Lender • Nationwide Coverage",
+  phone: "1-800-878-2548",
+  phoneRaw: "18008782548",
+  email: "funding@precisiontruckcapital.com",
+  address: {
+    street: "1200 Route 73 South, Suite 310",
+    city: "Mt. Laurel",
+    state: "NJ",
+    zip: "08054",
+  },
+  hours: "Mon–Fri 8:00 AM – 6:00 PM EST",
+  founded: "1979",
+  yearsFunded: "45+",
+  totalFunded: "$500M+",
+  statesServed: "48",
+  social: {
+    linkedin: "https://linkedin.com",
+    facebook: "https://facebook.com",
+    twitter: "https://x.com",
+  },
+  navLinks: [
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Dealer Program", href: "/dealer-program" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+  ],
+  copyright: `© ${new Date().getFullYear()} Precision Truck Capital — Direct Lender. All rights reserved.`,
+};
