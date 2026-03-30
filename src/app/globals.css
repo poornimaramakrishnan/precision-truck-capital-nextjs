@@ -23,6 +23,9 @@
   .btn-secondary {
     @apply inline-flex items-center justify-center px-8 py-4 bg-white text-navy-900 font-semibold rounded-lg border-2 border-navy-900 hover:bg-navy-900 hover:text-white transition-all duration-200;
   }
+  .btn-navy {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-navy-900 text-white font-semibold rounded-lg border-2 border-navy-900 hover:bg-navy-800 hover:border-navy-800 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
   .btn-outline-white {
     @apply inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold rounded-lg border-2 border-white hover:bg-white hover:text-navy-900 transition-all duration-200;
   }

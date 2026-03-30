@@ -37,7 +37,7 @@ export default function CTASection({
               href={primaryCta.href}
               className={
                 variant === "orange"
-                  ? "btn-secondary !border-white !text-white hover:!bg-white hover:!text-orange-600"
+                  ? "btn-navy text-base"
                   : "btn-primary text-base"
               }
             >

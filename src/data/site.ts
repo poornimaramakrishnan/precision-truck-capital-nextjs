@@ -23,6 +23,7 @@ export const siteConfig = {
   navLinks: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
+    { label: "Funded Deals", href: "/funded-deals" },
     { label: "Dealer Program", href: "/dealer-program" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

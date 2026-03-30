@@ -11,4 +11,6 @@ export const heroImages = {
     "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2076&auto=format&fit=crop",
   contact:
     "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop",
+  fundedDeals:
+    "https://images.unsplash.com/photo-1570071580808-dab1cc278239?q=80&w=2070&auto=format&fit=crop",
 };
