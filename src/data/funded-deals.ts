@@ -75,8 +75,8 @@ export const fundedDealsData = {
       featuredImage: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80",
-        "https://images.unsplash.com/photo-1570071580808-dab1cc278239?w=1200&q=80",
-        "https://images.unsplash.com/photo-1586191582066-04667e47e88a?w=1200&q=80",
+        "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=1200&q=80",
+        "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80",
       ],
       keyDetails: [
         { label: "Equipment", value: "2024 Peterbilt 389 Sleeper" },
@@ -104,7 +104,7 @@ export const fundedDealsData = {
       featuredImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
-        "https://images.unsplash.com/photo-1562920618-5637e2f6e7a3?w=1200&q=80",
+        "https://images.unsplash.com/photo-1567818735868-e71b99932e29?w=1200&q=80",
         "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1200&q=80",
       ],
       keyDetails: [
@@ -159,11 +159,11 @@ export const fundedDealsData = {
       category: "Trailers" as DealCategory,
       description:
         "Gonzalez Freight LLC was awarded a temperature-controlled contract with a national grocery chain but needed three additional reefer trailers within 30 days to meet the start date. The owner had strong business credit but needed creative structuring to keep his debt-to-income ratio within underwriting guidelines. We financed all three 2023 Wabash 53' reefers under a single master agreement with a seasonal payment structure that matched his revenue cycles — lower payments in Q1 and Q4, standard payments during peak produce season.",
-      featuredImage: "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=800&q=80",
+      featuredImage: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=1200&q=80",
+        "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1200&q=80",
         "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=1200&q=80",
-        "https://images.unsplash.com/photo-1570071580808-dab1cc278239?w=1200&q=80",
+        "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=1200&q=80",
       ],
       keyDetails: [
         { label: "Equipment", value: "3× 2023 Wabash 53' Reefer Trailers" },
@@ -188,11 +188,11 @@ export const fundedDealsData = {
       category: "Dealer Program" as DealCategory,
       description:
         "Northeast Volvo Trucks, a full-service dealership in Allentown, PA, was losing engine overhaul business because 60% of their customers couldn't pay for major repairs upfront. After joining our Dealer & Service Center Financing Program, their service advisors could offer instant financing at the point of sale. Within 6 months, their monthly engine overhaul volume went from 8 to 32 — a 300% increase. Their average repair order value also increased because customers were willing to approve additional recommended work when financing was available.",
-      featuredImage: "https://images.unsplash.com/photo-1562920618-5637e2f6e7a3?w=800&q=80",
+      featuredImage: "https://images.unsplash.com/photo-1504222490345-c075b6008014?w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1562920618-5637e2f6e7a3?w=1200&q=80",
         "https://images.unsplash.com/photo-1504222490345-c075b6008014?w=1200&q=80",
-        "https://images.unsplash.com/photo-1586191582066-04667e47e88a?w=1200&q=80",
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1200&q=80",
+        "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80",
       ],
       keyDetails: [
         { label: "Partner Type", value: "Full-Service Volvo Dealership" },
@@ -220,7 +220,7 @@ export const fundedDealsData = {
       featuredImage: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=800&q=80",
       gallery: [
         "https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=1200&q=80",
-        "https://images.unsplash.com/photo-1570071580808-dab1cc278239?w=1200&q=80",
+        "https://images.unsplash.com/photo-1530685932526-48ec92998eaa?w=1200&q=80",
         "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80",
       ],
       keyDetails: [
@@ -244,11 +244,11 @@ export const fundedDealsData = {
       category: "Fleet Expansion" as DealCategory,
       description:
         "Patriot Logistics, a 15-truck regional LTL carrier based in Virginia, was awarded a significant distribution contract that required adding 5 trucks within 60 days. Their existing bank offered terms that would have strained their credit line and limited future borrowing capacity. We structured a fleet expansion package with a single master note, step-up payments that started low during the ramp-up period, and built-in refinancing options at 24 months. All 5 trucks — 2024 Volvo VNL 860s — were titled, insured, and on the road in 45 days.",
-      featuredImage: "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=800&q=80",
+      featuredImage: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=1200&q=80",
+        "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200&q=80",
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
-        "https://images.unsplash.com/photo-1562920618-5637e2f6e7a3?w=1200&q=80",
+        "https://images.unsplash.com/photo-1567818735868-e71b99932e29?w=1200&q=80",
       ],
       keyDetails: [
         { label: "Equipment", value: "5× 2024 Volvo VNL 860 Sleepers" },
@@ -273,9 +273,9 @@ export const fundedDealsData = {
       category: "Tow & Recovery" as DealCategory,
       description:
         "Thompson Towing & Recovery had been running medium-duty trucks for 5 years and wanted to break into heavy-duty recovery — a higher-margin segment that required a significant equipment investment. The Jerr-Dan 50-ton integrated wrecker they needed was $320,000 new, and their local bank wouldn't finance specialty recovery equipment. We understood the tow and recovery industry's unique economics (per-job pricing, municipal contracts, motor club agreements) and structured a 72-month deal with payments calibrated to the truck's projected revenue per rotation.",
-      featuredImage: "https://images.unsplash.com/photo-1570071580808-dab1cc278239?w=800&q=80",
+      featuredImage: "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=800&q=80",
       gallery: [
-        "https://images.unsplash.com/photo-1570071580808-dab1cc278239?w=1200&q=80",
+        "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=1200&q=80",
         "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80",
         "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1200&q=80",
       ],
